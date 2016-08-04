@@ -11,6 +11,7 @@ button_up.onclick = function() {
 }
 
 /*-------------------------------------*/
+
 document.body.onload = function() {
   changeBackgroundBlock(bg_elemtnt, "background", 2, 5);
   setTimeout(chengeBgBody, 1500);
@@ -40,7 +41,8 @@ function chengeBgBody() {
   var scrol_size  = window.pageYOffset || document.documentElement.scrollTop;
   var a = document.documentElement.scrollHeight / 10;
   var body = document.body;
-  if(scrol_size > a * 6){
+
+  if(scrol_size > a * 6 ){
     body.style.backgroundImage='url(images/bg_invite.jpg)';
   }else if(scrol_size < a * 6 ){
     body.style.backgroundImage='url(images/background2.jpg)';
