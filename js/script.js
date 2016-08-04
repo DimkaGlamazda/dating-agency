@@ -12,8 +12,8 @@ button_up.onclick = function() {
 
 /*-------------------------------------*/
 window.onload = function() {
-  changeBackgroundBlock(bg_elemtnt, "background", 2, 5);
   chengeBgBody();
+  changeBackgroundBlock(bg_elemtnt, "background", 2, 5);
 }
 
 /*-------------------------------------*/
