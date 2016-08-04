@@ -1,29 +1,25 @@
-
-/*----------------------------------------------*/
-window.onload = function() {
-  changeBackgroundBlock(bg_elemtnt, "background", 2, 5);
-  chengeBg();
-  window.onscroll = function() {
-    chengeBg();
-  }
-}
-
-/*----------------------------------------------*/
-var button_up = document.getElementById('button_up');
-button_up.onclick = function() {
-  up();
-}
-
-
-/*===== varebles =====*/
-var bg_elemtnt = document.getElementById('js-bg');
-
-
-/*===== Script for slider =====*/
 $(document).ready(function(){
   $('.bxslider').bxSlider();
 });
+/*===== Varebles =====*/
+var bg_elemtnt = document.getElementById('js-bg');
+var button_up = document.getElementById('button_up');
 
+/*=====  Events =====*/
+button_up.onclick = function() {
+	up();
+}
+
+/*-------------------------------------*/
+window.onload = function() {
+  changeBackgroundBlock(bg_elemtnt, "background", 2, 5);
+  chengeBgBody();
+}
+
+/*-------------------------------------*/
+ window.onscroll = function() {
+    chengeBgBody();
+  }
 
 /*===== Function for jump to top of the page =====*/
 
