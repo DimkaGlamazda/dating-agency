@@ -11,7 +11,7 @@ button_up.onclick = function() {
 }
 
 /*-------------------------------------*/
-window.onload = function() {
+document.body.onload = function() {
   chengeBgBody();
   changeBackgroundBlock(bg_elemtnt, "background", 2, 5);
 }
@@ -40,7 +40,7 @@ function chengeBgBody() {
   var a = document.documentElement.scrollHeight / 10;
   var body = document.body;
   if(scrol_size < a){
-    return;
+    body.style.backgroundColor='white';
   }else if(scrol_size > a * 6){
     body.style.backgroundImage='url(images/bg_invite.jpg)';
   }else if(scrol_size < a * 6){
