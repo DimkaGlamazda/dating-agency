@@ -13,7 +13,7 @@ button_up.onclick = function() {
 /*-------------------------------------*/
 
 document.body.onload = function() {
-  changeBackgroundBlock(bg_elemtnt, "background", 2, 5);
+  changeBackgroundBlock(bg_elemtnt, "background", 2, 4);
   setTimeout(chengeBgBody, 1500);
 }
 
@@ -43,16 +43,16 @@ function chengeBgBody() {
   var body = document.body;
 
   if(scrol_size > a * 6 ){
-    body.style.backgroundImage='url(images/bg_invite.jpg)';
+    body.style.backgroundImage='url("images/bg_invite.jpg")';
   }else if(scrol_size < a * 6 ){
-    body.style.backgroundImage='url(images/background2.jpg)';
+    body.style.backgroundImage='url("images/background2.jpg")';
   }
 }
 
 /*====== Function for random bacground img =====*/
 
 function changeBackgroundBlock(elem, nameImg, numMinImg, numMaxImg) {
-  elem.style.backgroundImage = 'url(images/'+nameImg + getRandom(numMinImg, numMaxImg) +'.jpg)';
+  elem.style.backgroundImage = 'url("images/'+nameImg + getRandom(numMinImg, numMaxImg) +'.jpg")';
 }
 
 /*====== Function for random numbers =====*/
